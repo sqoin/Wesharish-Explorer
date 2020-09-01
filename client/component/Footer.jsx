@@ -33,7 +33,7 @@ class Footer extends Component {
           <span className="footer__legal">
             <div>Copyright &copy; 2020 - {currentYear} <a href={config.coinDetails.websiteUrl} target="_blank" rel="nofollow noopener">{config.coinDetails.longName}</a></div>
 
-            <div>WesharishCoin Explorer &copy; 2020 - {currentYear} <a href="http://wesharishcoin/coin/" target="_blank" rel="nofollow noopener">Wesharish Coin Cryptocurrency</a></div>
+            <div>WesharishCoin Explorer &copy; 2020 - {currentYear} <a href="http://weshareish.com//coin/" target="_blank" rel="nofollow noopener">Wesharish Coin Cryptocurrency</a></div>
           </span>
         </div>
         <div className="footer__block">

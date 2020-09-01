@@ -28,7 +28,7 @@ const config = {
     shortName: 'WSC',
     longName: 'Wesharishcoin Cryptocurrency',
     coinNumberFormat: '0,0.0000',
-    websiteUrl: 'http://wesharishcoin.com/'
+    websiteUrl: 'http://weshareish.com/'
   },
 
   ///////////////////////////////
