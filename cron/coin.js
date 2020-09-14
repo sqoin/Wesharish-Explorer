@@ -18,27 +18,27 @@ async function syncCoin() {
   const url = `${ config.coinMarketCap.api }${ config.coinMarketCap.ticker }`;
 
   const info = await rpc.call('getinfo');
-  const masternodes = 0;//await rpc.call('getmasternodecount');
+  const masternodes =0;// await rpc.call('getmasternodecount');
   const nethashps = await rpc.call('getnetworkhashps');
 
-  let market = await fetch(url);
-  if (Array.isArray(market)) {
+  let market = {}; //await fetch(url);
+  /*if (Array.isArray(market)) {
     market = market.length ? market[0] : {};
-  }
+  }*/
 
   const coin = new Coin({
-    cap: market.market_cap_usd,
+    cap: 0, //market.market_cap_usd,
     createdAt: date,
     blocks: info.blocks,
-    btc: market.price_btc,
+    btc: 0,                
     diff: info.difficulty,
-    mnsOff: 0,//masternodes.total - masternodes.stable,
+    mnsOff:0,// masternodes.total - masternodes.stable,
     mnsOn: 0,//masternodes.stable,
     netHash: nethashps,
     peers: info.connections,
     status: 'Online',
-    supply: market.available_supply, // TODO: change to actual count from db.
-    usd: market.price_usd
+    supply: 0,//market.available_supply, // TODO: change to actual count from db.
+    usd: 0 //et.price_usd
   });
 
   await coin.save();
@@ -52,14 +52,14 @@ async function update() {
   let code = 0;
 
   try {
-    locker.lock(type);
+  //  locker.lock(type);
     await syncCoin();
   } catch(err) {
     console.log(err);
     code = 1;
   } finally {
     try {
-      locker.unlock(type);
+//      locker.unlock(type);
     } catch(err) {
       console.log(err);
       code = 1;
