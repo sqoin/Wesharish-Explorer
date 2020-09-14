@@ -1,4 +1,4 @@
-![Wesharishcoin Logo]
+![ƀ](/images/icon.png) 
 
 
 Wesharishcoin Explorer
