@@ -1,4 +1,4 @@
-![Wesharishcoin Logo]
+![ƀ](/images/icon.png) 
 
 
 Wesharishcoin Explorer
@@ -19,7 +19,7 @@ https://yarnpkg.com/lang/en/docs/install/
 
 It is also required to have the wesharish daemon running in the background. It is recommended to set this up before beginning to set up the explorer so that it syncs by the time you need it.
 
-Our geniuses here at BastojiCorp™ have put together a script to do this for you. Just run
+Our geniuses here at WesharishCorp™ have put together a script to do this for you. Just run
 
 `bash script/wesharish_setup.sh`
 
